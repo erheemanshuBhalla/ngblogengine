@@ -9,6 +9,14 @@ import { AddComponent } from './components/articles/add/add.component';
 import { EditComponent } from './components/articles/edit/edit.component';
 import { ListComponent } from './components/articles/list/list.component';
 import { DetailsComponent } from './components/articles/details/details.component';
+import { UsersComponent } from './components/users/users.component';
+import { AdminComponent } from './components/users/admin/admin.component';
+import { RegisterComponent } from './components/account/register/register.component';
+import { LoginComponent } from './components/account/login/login.component';
+import { ForgotpasswordComponent } from './components/account/forgotpassword/forgotpassword.component';
+import { ChangepasswordComponent } from './components/account/changepassword/changepassword.component';
+import { GetComponent } from './components/comments/get/get.component';
+import { TagsComponent } from './components/tags/tags.component';
 
 
 @NgModule({
@@ -19,7 +27,15 @@ import { DetailsComponent } from './components/articles/details/details.componen
     AddComponent,
     EditComponent,
     ListComponent,
-    DetailsComponent
+    DetailsComponent,
+    UsersComponent,
+    AdminComponent,
+    RegisterComponent,
+    LoginComponent,
+    ForgotpasswordComponent,
+    ChangepasswordComponent,
+    GetComponent,
+    TagsComponent
     
   ],
   imports: [
