@@ -1,59 +1,19 @@
-# AngularProject1
+Homepage - cards for 10 blog posts  Top 10 posts with load more option
+navbar with user icon with logout in dropdown, 4-5 menus of tags with their posts in that page, 
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+Blog list Page
+All blogs sidebar filters like tags, text filter, sort by latest, popularity, count views with list of blog posts, try to add paging to it.
 
-## Development server
+Blog Detail page
+description of blog entered from backend ( ckeditor ) with tags clickable and views
 
-To start a local development server, run:
+Backend
+blog title, tags ( multiple ) title dynamic ,Page to Add / edit / unpublish blog, blogs list page
 
-```bash
-ng serve
-```
+tags master
+add / edit / delete / list tags
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Microservice architecture 
+Onion Architecture
+Repository pattern and uow 
