@@ -7,4 +7,10 @@
     <!-- Folder where production build objects will be placed -->
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\AngularProject1\browser\</BuildOutputFolder>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\app\components\" />
+    <Folder Include="src\app\directives\" />
+    <Folder Include="src\app\guards\" />
+    <Folder Include="src\app\services\" />
+  </ItemGroup>
 </Project>
