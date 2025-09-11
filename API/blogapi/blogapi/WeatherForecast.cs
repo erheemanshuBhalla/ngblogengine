@@ -1,4 +1,4 @@
-namespace blogapi
+namespace APIGateway
 {
     public class WeatherForecast
     {

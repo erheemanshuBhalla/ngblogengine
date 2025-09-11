@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace blogapi.Controllers
+namespace APIGateway.Controllers
 {
     [ApiController]
     [Route("[controller]")]
