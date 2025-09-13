@@ -20,9 +20,14 @@
           "Host": "localhost",
           "Port": 7231
         }
+
       ],
       "UpstreamPathTemplate": "/AdBlogs/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "GatewayKey",
+        "AllowedScopes": []
+      }
     },
     {
       "DownstreamPathTemplate": "/api/Blogs/{everything}",
