@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminService", "..\..\Servi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommentService", "..\..\Services\CommentService\CommentService.csproj", "{F3063237-4B7C-4E9A-87E1-F4D083B4C8DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.Core", "..\..\Code\API.Core\API.Core.csproj", "{FC4B1C4C-7016-40AA-AAB0-139D9F961117}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{F3063237-4B7C-4E9A-87E1-F4D083B4C8DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3063237-4B7C-4E9A-87E1-F4D083B4C8DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3063237-4B7C-4E9A-87E1-F4D083B4C8DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC4B1C4C-7016-40AA-AAB0-139D9F961117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC4B1C4C-7016-40AA-AAB0-139D9F961117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC4B1C4C-7016-40AA-AAB0-139D9F961117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC4B1C4C-7016-40AA-AAB0-139D9F961117}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +101,7 @@ Global
 		{A721F578-EFAA-47C9-B005-EB01438DFEBE} = {07F63036-F507-42C4-869C-FFBEA559F88C}
 		{043680FE-FFD8-4A64-92E8-4E5C80889106} = {07F63036-F507-42C4-869C-FFBEA559F88C}
 		{F3063237-4B7C-4E9A-87E1-F4D083B4C8DD} = {07F63036-F507-42C4-869C-FFBEA559F88C}
+		{FC4B1C4C-7016-40AA-AAB0-139D9F961117} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {366E14FF-0B18-42B9-BE29-50118AD31F34}
