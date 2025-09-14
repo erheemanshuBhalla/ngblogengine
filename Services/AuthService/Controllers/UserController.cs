@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Code.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
+using API.Core
 namespace AuthService.Controllers
 {
     public class UserController : Controller
@@ -14,7 +15,7 @@ namespace AuthService.Controllers
         public IActionResult Login([FromBody] Usermodel login)
         {
             IActionResult response = Unauthorized();
-            var user = AuthenticateUser(login);
+            var user = Usermethods.AuthenticateUser(login);
 
             if (user.Status == "Success")
             {
