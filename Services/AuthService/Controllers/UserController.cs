@@ -6,6 +6,12 @@ namespace AuthService.Controllers
 {
     public class UserController : Controller
     {
+        private IConfiguration _config;
+
+        public UserController(IConfiguration config)
+        {
+            _config = config;
+        }
         public IActionResult Index()
         {
             return View();
@@ -19,7 +25,7 @@ namespace AuthService.Controllers
 
             if (user.Status == "Success")
             {
-                var tokenString = GenerateJSONWebToken(user);
+                var tokenString = Usermethods.GenerateJSONWebToken(user, _config["Jwt:Key"], _config["Jwt:Audience"], _config["Jwt:Issuer"]);
                 response = Ok(new { token = tokenString });
             }
             else
