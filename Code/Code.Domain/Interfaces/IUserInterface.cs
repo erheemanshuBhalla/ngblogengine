@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Code.Domain.Entities
+namespace Code.Domain.Interfaces
 {
-    public class Blogmodel
+    internal interface IUserInterface
     {
-
     }
 }

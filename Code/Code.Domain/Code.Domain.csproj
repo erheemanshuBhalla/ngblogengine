@@ -168,11 +168,11 @@
     <Compile Include="Core.cs" />
     <Compile Include="Entities\Blogmodel.cs" />
     <Compile Include="Entities\Usermodel.cs" />
+    <Compile Include="Interfaces\IBlogInterface.cs" />
+    <Compile Include="Interfaces\IUserInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
