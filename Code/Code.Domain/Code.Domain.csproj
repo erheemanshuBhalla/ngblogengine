@@ -166,6 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core.cs" />
+    <Compile Include="Entities\Blogmodel.cs" />
     <Compile Include="Entities\Usermodel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
