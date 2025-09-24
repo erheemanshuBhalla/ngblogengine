@@ -1,7 +1,7 @@
 ﻿using Code.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using API.Core
+using API.Core;
 namespace AuthService.Controllers
 {
     public class UserController : Controller
