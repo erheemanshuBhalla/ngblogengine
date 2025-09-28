@@ -167,6 +167,7 @@
   <ItemGroup>
     <Compile Include="Core.cs" />
     <Compile Include="Entities\Blogmodel.cs" />
+    <Compile Include="Entities\Tagsmodel.cs" />
     <Compile Include="Entities\Usermodel.cs" />
     <Compile Include="Interfaces\IBlogInterface.cs" />
     <Compile Include="Interfaces\IUserInterface.cs" />
