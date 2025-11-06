@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using API.Core;
 namespace AuthService.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class UserController : Controller
     {
         private IConfiguration _config;
