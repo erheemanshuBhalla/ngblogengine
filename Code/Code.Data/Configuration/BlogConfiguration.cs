@@ -1,4 +1,5 @@
 ﻿using Code.Domain.Entities;
+using Code.Infrastructure.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;

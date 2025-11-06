@@ -9,7 +9,7 @@ Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "blogwebapp", "..\..\WebApp\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code", "Code", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Data", "..\..\Code\Code.Data\Code.Data.csproj", "{1E349A39-C51B-425B-A5CF-F0AFEA1AF506}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Infrastructure", "..\..\Code\Code.Data\Code.Infrastructure.csproj", "{1E349A39-C51B-425B-A5CF-F0AFEA1AF506}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Domain", "..\..\Code\Code.Domain\Code.Domain.csproj", "{0C113023-73E9-4058-A445-36B6AA007A95}"
 EndProject
@@ -29,7 +29,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminService", "..\..\Servi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommentService", "..\..\Services\CommentService\CommentService.csproj", "{F3063237-4B7C-4E9A-87E1-F4D083B4C8DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.Core", "..\..\Code\API.Core\API.Core.csproj", "{FC4B1C4C-7016-40AA-AAB0-139D9F961117}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Common", "..\..\Code\API.Core\Code.Common.csproj", "{FC4B1C4C-7016-40AA-AAB0-139D9F961117}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

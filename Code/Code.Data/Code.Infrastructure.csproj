@@ -188,9 +188,7 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Infrastructure\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Code.Domain\Code.Domain.csproj">
       <Project>{0C113023-73E9-4058-A445-36B6AA007A95}</Project>

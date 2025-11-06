@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using API.Core;
+using Code.Common;
 namespace AuthService.Controllers
 {
     [Route("api/[controller]")]
