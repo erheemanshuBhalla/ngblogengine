@@ -14,5 +14,7 @@ namespace Code.Domain.Entities
         public bool Isactive { get; set; } = false;
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public string Addedby { get; set; } = string.Empty;
+
+        public List<Tagsmodel> Tags { get; set; } = new List<Tagsmodel>();
     }
 }
