@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Domain", "..\..\Code\C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Services", "..\..\Code\Code.Services\Code.Services.csproj", "{294F3951-0472-4930-81C9-641FD5DF62BC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{07F63036-F507-42C4-869C-FFBEA559F88C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{07F63036-F507-42C4-869C-FFBEA559F88C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogService", "..\..\Services\BlogService\BlogService.csproj", "{AAFE0D8D-8517-426A-865F-40E37DBDDCD2}"
 EndProject

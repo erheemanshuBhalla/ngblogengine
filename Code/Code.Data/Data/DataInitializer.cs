@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Code.Data.Repositories
+namespace Code.Data.Data
 {
-    internal class Class1
+    internal class DataInitializer
     {
     }
 }
