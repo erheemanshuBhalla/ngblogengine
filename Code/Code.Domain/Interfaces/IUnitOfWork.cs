@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Code.Domain.Interfaces
 {
-    internal interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
+        IUserRepository Users { get; }
+        IBlogRepository Products { get; }
+
+        void Commit();
+        void Rollback();
     }
 }

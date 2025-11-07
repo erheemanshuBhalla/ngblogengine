@@ -169,11 +169,11 @@
     <Compile Include="Entities\Blogmodel.cs" />
     <Compile Include="Entities\Tagsmodel.cs" />
     <Compile Include="Entities\Usermodel.cs" />
-    <Compile Include="Interfaces\IBlogInterface.cs" />
+    <Compile Include="Interfaces\IBlogRepository.cs" />
     <Compile Include="Interfaces\IDbConnectionFactory.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
-    <Compile Include="Interfaces\IUserInterface.cs" />
+    <Compile Include="Interfaces\IUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
