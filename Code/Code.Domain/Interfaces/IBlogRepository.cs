@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Code.Domain.Interfaces
 {
-    public interface IProductRepository : IRepository<Blogmodel>
+    public interface IBlogRepository : IRepository<Blogmodel>
     {
-        Task<IEnumerable<Blogmodel>> GetProductsInStockAsync();
+        Task<IEnumerable<Blogmodel>> GetBlogsInStockAsync();
     }
 }

@@ -19,7 +19,7 @@ namespace Code.Domain.Entities
         [ValidateNever]
         public string Role { get; set; }
         [ValidateNever]
-        public string UserId { get; set; }
+        public int UserId { get; set; }
         [ValidateNever]
         public DateTime DateofJoining { get; set; }
         [ValidateNever]

@@ -1,4 +1,5 @@
 ﻿using Code.Data.Repositories;
+using Code.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -15,7 +16,7 @@ namespace Code.Data.UnitofWork
         private IDbTransaction _transaction;
 
         public IUserRepository Users { get; private set; }
-        public IProductRepository Products { get; private set; }
+        public IBlogRepository Blogs { get; private set; }
 
         private bool _disposed;
 
@@ -26,7 +27,7 @@ namespace Code.Data.UnitofWork
             _transaction = _connection.BeginTransaction();
 
             Users = new UserRepository(_transaction);
-            Products = new ProductRepository(_transaction);
+            Blogs = new BlogRepository(_transaction);
         }
 
         public void Commit()
@@ -47,7 +48,7 @@ namespace Code.Data.UnitofWork
             _transaction = _connection.BeginTransaction();
 
             Users = new UserRepository(_transaction);
-            Products = new ProductRepository(_transaction);
+            Blogs = new BlogRepository(_transaction);
         }
 
         public void Dispose()

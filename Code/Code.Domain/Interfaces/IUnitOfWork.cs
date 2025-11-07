@@ -9,7 +9,7 @@ namespace Code.Domain.Interfaces
     public interface IUnitOfWork : IDisposable
     {
         IUserRepository Users { get; }
-        IBlogRepository Products { get; }
+        IBlogRepository Blogs { get; }
 
         void Commit();
         void Rollback();
