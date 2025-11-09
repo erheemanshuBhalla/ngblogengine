@@ -1,3 +1,7 @@
+﻿using Code.Data.Data;
+using Code.Data.UnitofWork;
+using Code.Domain.Interfaces;
+using Code.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Ocelot.DependencyInjection;
@@ -5,8 +9,15 @@ using Ocelot.Middleware;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSingleton<IDbConnectionFactory, SqlConnectionFactory>();
+builder.Services.AddScoped<IUnitOfWork, DapperUnitOfWork>();
+
 
 // Add services to the container.
+
+// 2️⃣ Add Application Services
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<BlogService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -33,6 +44,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 });
 
 var app = builder.Build();
+// Initialize and seed DB
+//await DataInitializer.SeedAsync(app.Services);
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
