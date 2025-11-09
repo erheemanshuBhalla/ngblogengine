@@ -23,42 +23,42 @@ namespace Code.Data.Repositories
 
         public async Task<Blogmodel> GetByIdAsync(int id)
         {
-            var sql = "SELECT * FROM Products WHERE Id = @Id";
+            var sql = "SELECT * FROM Blogs WHERE Id = @Id";
             return await Connection.QueryFirstOrDefaultAsync<Blogmodel>(sql, new { Id = id }, _transaction);
         }
 
         public async Task<IEnumerable<Blogmodel>> GetAllAsync()
         {
-            var sql = "SELECT * FROM Products";
+            var sql = "SELECT * FROM Blogs";
             return await Connection.QueryAsync<Blogmodel>(sql, transaction: _transaction);
         }
 
-        public async Task<int> AddAsync(Blogmodel product)
+        public async Task<int> AddAsync(Blogmodel blog)
         {
             var sql = @"
-                INSERT INTO Products (Name, Price, Stock)
-                VALUES (@Name, @Price, @Stock);
+                INSERT INTO Blogs (Title, Description, Isactive,Addedby,CreatedAt)
+                VALUES (@Title, @Description, @Isactive,@Addedby,@CreatedAt);
                 SELECT CAST(SCOPE_IDENTITY() as int)";
-            var id = await Connection.ExecuteScalarAsync<int>(sql, product, _transaction);
-            product.Id = id;
+            var id = await Connection.ExecuteScalarAsync<int>(sql, blog, _transaction);
+            blog.Id = id;
             return id;
         }
 
-        public async Task<int> UpdateAsync(Blogmodel product)
+        public async Task<int> UpdateAsync(Blogmodel blog)
         {
-            var sql = "UPDATE Products SET Name = @Name, Price = @Price, Stock = @Stock WHERE Id = @Id";
-            return await Connection.ExecuteAsync(sql, product, _transaction);
+            var sql = "UPDATE Blogs SET Name = @Name, Price = @Price, Stock = @Stock WHERE Id = @Id";
+            return await Connection.ExecuteAsync(sql, blog, _transaction);
         }
 
         public async Task<int> DeleteAsync(int id)
         {
-            var sql = "DELETE FROM Products WHERE Id = @Id";
+            var sql = "DELETE FROM Blogs WHERE Id = @Id";
             return await Connection.ExecuteAsync(sql, new { Id = id }, _transaction);
         }
 
         public async Task<IEnumerable<Blogmodel>> GetBlogsInStockAsync()
         {
-            var sql = "SELECT * FROM Products WHERE Stock > 0";
+            var sql = "SELECT * FROM Blogs WHERE Stock > 0";
             return await Connection.QueryAsync<Blogmodel>(sql, transaction: _transaction);
         }
     }
