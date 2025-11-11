@@ -167,10 +167,15 @@
   <ItemGroup>
     <Compile Include="Core.cs" />
     <Compile Include="Entities\Blogmodel.cs" />
+    <Compile Include="Entities\Comment.cs" />
+    <Compile Include="Entities\Logmodel.cs" />
+    <Compile Include="Entities\Notification.cs" />
     <Compile Include="Entities\Tagsmodel.cs" />
     <Compile Include="Entities\Usermodel.cs" />
     <Compile Include="Interfaces\IBlogRepository.cs" />
+    <Compile Include="Interfaces\ICommentRepository.cs" />
     <Compile Include="Interfaces\IDbConnectionFactory.cs" />
+    <Compile Include="Interfaces\IlogRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\IUserRepository.cs" />
