@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 
 namespace Code.Data.Repositories
 {
- 
     public class BlogRepository : IBlogRepository
     {
         private readonly IDbTransaction _transaction;

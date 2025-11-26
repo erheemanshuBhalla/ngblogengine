@@ -17,6 +17,7 @@ import { ForgotpasswordComponent } from './components/account/forgotpassword/for
 import { ChangepasswordComponent } from './components/account/changepassword/changepassword.component';
 import { GetComponent } from './components/comments/get/get.component';
 import { TagsComponent } from './components/tags/tags.component';
+import { AuthComponent } from './components/auth/auth.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { TagsComponent } from './components/tags/tags.component';
     ForgotpasswordComponent,
     ChangepasswordComponent,
     GetComponent,
-    TagsComponent
+    TagsComponent,
+    AuthComponent
     
   ],
   imports: [
