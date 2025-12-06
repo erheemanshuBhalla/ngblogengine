@@ -1,1 +1,10 @@
-<p>add works!</p>
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()" (reset)="resetForm()">
+
+  <div>
+    <label>Name:</label>
+    <input type="text" formControlName="name">
+    <div *ngIf="productForm.get('name')?.hasError('required') && productForm.get('name')?.touched" style="color: red;">Tag Name is required</div>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>

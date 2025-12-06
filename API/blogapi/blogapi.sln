@@ -29,7 +29,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminService", "..\..\Servi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommentService", "..\..\Services\CommentService\CommentService.csproj", "{F3063237-4B7C-4E9A-87E1-F4D083B4C8DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Common", "..\..\Code\API.Core\Code.Common.csproj", "{FC4B1C4C-7016-40AA-AAB0-139D9F961117}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Methods", "..\..\Code\API.Core\Code.Methods.csproj", "{FC4B1C4C-7016-40AA-AAB0-139D9F961117}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
